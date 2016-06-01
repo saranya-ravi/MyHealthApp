@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		878B57EC1CFB74C9007128CE /* MeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B57EB1CFB74C9007128CE /* MeasurementsViewController.m */; };
+		87929BF81CFDA1F50090B77E /* FoodIntakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */; };
 		87D40F8B1CEB2E59000265D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D40F8A1CEB2E59000265D6 /* main.m */; };
 		87D40F8E1CEB2E59000265D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D40F8D1CEB2E59000265D6 /* AppDelegate.m */; };
 		87D40F911CEB2E59000265D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D40F901CEB2E59000265D6 /* ViewController.m */; };
@@ -22,6 +23,8 @@
 /* Begin PBXFileReference section */
 		878B57EA1CFB74C9007128CE /* MeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasurementsViewController.h; sourceTree = "<group>"; };
 		878B57EB1CFB74C9007128CE /* MeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasurementsViewController.m; sourceTree = "<group>"; };
+		87929BF61CFDA1F50090B77E /* FoodIntakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodIntakeViewController.h; sourceTree = "<group>"; };
+		87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodIntakeViewController.m; sourceTree = "<group>"; };
 		87D40F861CEB2E59000265D6 /* MyHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D40F8A1CEB2E59000265D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87D40F8C1CEB2E59000265D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -88,6 +91,8 @@
 				87D40FA41CEB32B0000265D6 /* ProfileViewController.m */,
 				878B57EA1CFB74C9007128CE /* MeasurementsViewController.h */,
 				878B57EB1CFB74C9007128CE /* MeasurementsViewController.m */,
+				87929BF61CFDA1F50090B77E /* FoodIntakeViewController.h */,
+				87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */,
 			);
 			path = MyHealthApp;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87929BF81CFDA1F50090B77E /* FoodIntakeViewController.m in Sources */,
 				878B57EC1CFB74C9007128CE /* MeasurementsViewController.m in Sources */,
 				87D40F911CEB2E59000265D6 /* ViewController.m in Sources */,
 				87D40F8E1CEB2E59000265D6 /* AppDelegate.m in Sources */,
