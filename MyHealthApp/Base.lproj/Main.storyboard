@@ -195,6 +195,11 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Food intake" id="wXk-1I-oqC">
+                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Zxp-fK-JRI">
+                            <connections>
+                                <action selector="refresh:" destination="SOM-0p-yUb" id="FOy-Kc-Z6O"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ab4-5O-ggZ">
                             <connections>
                                 <segue destination="onZ-4f-GSp" kind="push" id="ay4-Jq-S1b"/>

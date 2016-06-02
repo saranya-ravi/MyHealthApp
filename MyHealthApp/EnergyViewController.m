@@ -125,6 +125,11 @@
 	self.netLabel.text = [energyFormatter stringFromValue:self.netEnergy unit:NSEnergyFormatterUnitCalorie];
 
 }
+
+- (IBAction)refresh:(id)sender {
+	[self refreshStatistics];
+}
+
 - (void)refreshStatistics {
 	HKQuantityType *energyConsumedType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDietaryEnergyConsumed];
 	HKQuantityType *activeEnergyBurnType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierActiveEnergyBurned];
