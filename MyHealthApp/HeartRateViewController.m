@@ -48,7 +48,6 @@
 	[self.healthStore aapl_mostRecentQuantitySampleOfType:heartRateType predicate:nil completion:^(HKQuantity *mostRecentQuantity, NSError *error) {
 		if (!mostRecentQuantity) {
 			NSLog(@"Either an error occured fetching the user's heart rate information or none has been stored yet");
-			
 			dispatch_async(dispatch_get_main_queue(), ^{
 				self.heartRateLabel.text = @"--";
 			});

@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface FoodIntakeViewController : UITableViewController <UITableViewDelegate>
-
+@property (nonatomic, strong) NSMutableArray *selectedFoodItems;
 @end

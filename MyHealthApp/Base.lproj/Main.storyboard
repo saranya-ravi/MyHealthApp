@@ -197,7 +197,7 @@
                     <navigationItem key="navigationItem" title="Food intake" id="wXk-1I-oqC">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ab4-5O-ggZ">
                             <connections>
-                                <segue destination="onZ-4f-GSp" kind="show" id="ay4-Jq-S1b"/>
+                                <segue destination="onZ-4f-GSp" kind="push" id="ay4-Jq-S1b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -223,16 +223,8 @@
                         <sections>
                             <tableViewSection id="ir9-Yu-nfc">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="M9k-3a-bKe">
-                                        <rect key="frame" x="0.0" y="64" width="320" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="M9k-3a-bKe" id="O36-FN-LEQ">
-                                            <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="5ir-99-aKV" detailTextLabel="cgl-ym-d6d" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="ASs-ce-vLI">
-                                        <rect key="frame" x="0.0" y="108" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="64" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ASs-ce-vLI" id="u5S-zu-rB8">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="59.5"/>
@@ -256,7 +248,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="LWF-q2-5Ic" detailTextLabel="mF7-Rh-4PT" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="rMe-e0-hui">
-                                        <rect key="frame" x="0.0" y="168" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="124" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="rMe-e0-hui" id="ouZ-QL-uVb">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="59.5"/>
@@ -280,7 +272,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="k4e-Ic-faj" detailTextLabel="DIL-xE-JGJ" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="AYU-eJ-uue">
-                                        <rect key="frame" x="0.0" y="228" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="184" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AYU-eJ-uue" id="01j-7A-8bz">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="59.5"/>
@@ -304,7 +296,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="QjY-E3-4WS" detailTextLabel="JWs-4F-a0M" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="3Em-h3-bqV">
-                                        <rect key="frame" x="0.0" y="288" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="244" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="3Em-h3-bqV" id="eVb-6b-V0i">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="59.5"/>
@@ -328,7 +320,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="5J3-Ob-NMK" detailTextLabel="0ZA-AL-pyW" style="IBUITableViewCellStyleSubtitle" id="9Zo-uO-bbt">
-                                        <rect key="frame" x="0.0" y="348" width="320" height="44"/>
+                                        <rect key="frame" x="0.0" y="304" width="320" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="9Zo-uO-bbt" id="c0c-Ao-Bdo">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="43.5"/>
@@ -352,7 +344,7 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="checkmark" indentationWidth="10" textLabel="ukX-Dc-7vf" detailTextLabel="9Ju-Ej-fUl" rowHeight="60" style="IBUITableViewCellStyleSubtitle" id="xfa-pw-0eF">
-                                        <rect key="frame" x="0.0" y="392" width="320" height="60"/>
+                                        <rect key="frame" x="0.0" y="348" width="320" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="xfa-pw-0eF" id="8rU-gF-U2f">
                                             <rect key="frame" x="0.0" y="0.0" width="281" height="59.5"/>
@@ -384,11 +376,16 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Pick food" id="NW7-4x-1hZ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dR3-gG-6r3"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="done" id="dR3-gG-6r3">
+                            <connections>
+                                <segue destination="BtW-am-1CP" kind="unwind" identifier="unwindToEnergy" unwindAction="unwindToEnergy:" id="SqQ-rv-WnN"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YVK-Ln-Asv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="BtW-am-1CP" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="974" y="933"/>
         </scene>

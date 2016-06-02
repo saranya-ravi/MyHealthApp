@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EnergyViewController : UIViewController
+@import HealthKit;
 
+@interface EnergyViewController : UIViewController
+@property (nonatomic) HKHealthStore *healthStore;
 @end

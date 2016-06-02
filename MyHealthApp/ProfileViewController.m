@@ -23,9 +23,7 @@
 			if (!success) {
 				NSLog(@"You didn't allow HealthKit to access these read data types. The error was: %@.", error);
 				return;
-			}
-			else
-			{
+			} else {
 				self.isHealthStoreAvailable = YES;
 			}
 		}];
@@ -35,7 +33,7 @@
 	NSDate *dateOfBirth = [self.healthStore dateOfBirthWithError:&error];
 	
 	if (!dateOfBirth) {
-		NSLog(@"Either an error occured fetching the user's age information or none has been stored yet. In your app, try to handle this gracefully.");
+		NSLog(@"Either an error occured fetching the user's age information or none has been stored yet.");
 	}
 	else {
 		// Compute the age of the user.

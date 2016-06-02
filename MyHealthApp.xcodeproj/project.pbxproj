@@ -17,6 +17,7 @@
 		3C3C01321CFF577100093ED1 /* HKHealthStore+AAPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3C01311CFF577100093ED1 /* HKHealthStore+AAPLExtensions.m */; };
 		3C3C01341CFF583E00093ED1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3C01331CFF583E00093ED1 /* HealthKit.framework */; };
 		3C73B4EC1D00277B001D171B /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B4EB1D00277B001D171B /* ActivityController.swift */; };
+		873289DB1D002BDA00537439 /* FoodItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 873289DA1D002BDA00537439 /* FoodItem.m */; };
 		878B57EC1CFB74C9007128CE /* MeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B57EB1CFB74C9007128CE /* MeasurementsViewController.m */; };
 		87929BF81CFDA1F50090B77E /* FoodIntakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */; };
 		87A509B51CFF83B900389E56 /* EnergyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A509B41CFF83B900389E56 /* EnergyViewController.m */; };
@@ -90,6 +91,8 @@
 		3C3C01331CFF583E00093ED1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		3C3C01351CFF583E00093ED1 /* watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "watch Extension.entitlements"; sourceTree = "<group>"; };
 		3C73B4EB1D00277B001D171B /* ActivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
+		873289D91D002BDA00537439 /* FoodItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodItem.h; sourceTree = "<group>"; };
+		873289DA1D002BDA00537439 /* FoodItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodItem.m; sourceTree = "<group>"; };
 		878B57EA1CFB74C9007128CE /* MeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasurementsViewController.h; sourceTree = "<group>"; };
 		878B57EB1CFB74C9007128CE /* MeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasurementsViewController.m; sourceTree = "<group>"; };
 		87929BF61CFDA1F50090B77E /* FoodIntakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodIntakeViewController.h; sourceTree = "<group>"; };
@@ -188,6 +191,8 @@
 		87A509BE1D00201400389E56 /* Food and Energy */ = {
 			isa = PBXGroup;
 			children = (
+				873289D91D002BDA00537439 /* FoodItem.h */,
+				873289DA1D002BDA00537439 /* FoodItem.m */,
 				87929BF61CFDA1F50090B77E /* FoodIntakeViewController.h */,
 				87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */,
 				87A509B31CFF83B900389E56 /* EnergyViewController.h */,
@@ -421,6 +426,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				873289DB1D002BDA00537439 /* FoodItem.m in Sources */,
 				87929BF81CFDA1F50090B77E /* FoodIntakeViewController.m in Sources */,
 				878B57EC1CFB74C9007128CE /* MeasurementsViewController.m in Sources */,
 				87A509B51CFF83B900389E56 /* EnergyViewController.m in Sources */,
