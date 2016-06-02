@@ -164,6 +164,53 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		87A509BC1D001FF000389E56 /* HeartRate */ = {
+			isa = PBXGroup;
+			children = (
+				87A509B61CFF8C4D00389E56 /* HeartRateViewController.h */,
+				87A509B71CFF8C4D00389E56 /* HeartRateViewController.m */,
+			);
+			name = HeartRate;
+			sourceTree = "<group>";
+		};
+		87A509BD1D00200200389E56 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				87D40FA31CEB32B0000265D6 /* ProfileViewController.h */,
+				87D40FA41CEB32B0000265D6 /* ProfileViewController.m */,
+			);
+			name = Profile;
+			sourceTree = "<group>";
+		};
+		87A509BE1D00201400389E56 /* Food and Energy */ = {
+			isa = PBXGroup;
+			children = (
+				87929BF61CFDA1F50090B77E /* FoodIntakeViewController.h */,
+				87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */,
+				87A509B31CFF83B900389E56 /* EnergyViewController.h */,
+				87A509B41CFF83B900389E56 /* EnergyViewController.m */,
+			);
+			name = "Food and Energy";
+			sourceTree = "<group>";
+		};
+		87A509BF1D00202400389E56 /* Measurements */ = {
+			isa = PBXGroup;
+			children = (
+				878B57EA1CFB74C9007128CE /* MeasurementsViewController.h */,
+				878B57EB1CFB74C9007128CE /* MeasurementsViewController.m */,
+			);
+			name = Measurements;
+			sourceTree = "<group>";
+		};
+		87A509C01D00203A00389E56 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3C3C01301CFF577100093ED1 /* HKHealthStore+AAPLExtensions.h */,
+				3C3C01311CFF577100093ED1 /* HKHealthStore+AAPLExtensions.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
 		87D40F7D1CEB2E59000265D6 = {
 			isa = PBXGroup;
 			children = (
@@ -189,28 +236,21 @@
 		87D40F881CEB2E59000265D6 /* MyHealthApp */ = {
 			isa = PBXGroup;
 			children = (
-				87D40FA21CEB2E63000265D6 /* MyHealthApp.entitlements */,
-				3C3C01301CFF577100093ED1 /* HKHealthStore+AAPLExtensions.h */,
-				3C3C01311CFF577100093ED1 /* HKHealthStore+AAPLExtensions.m */,
 				87D40F8C1CEB2E59000265D6 /* AppDelegate.h */,
 				87D40F8D1CEB2E59000265D6 /* AppDelegate.m */,
 				87D40F8F1CEB2E59000265D6 /* ViewController.h */,
 				87D40F901CEB2E59000265D6 /* ViewController.m */,
 				87D40F921CEB2E59000265D6 /* Main.storyboard */,
-				87D40F951CEB2E59000265D6 /* Assets.xcassets */,
 				87D40F971CEB2E59000265D6 /* LaunchScreen.storyboard */,
+				87A509BF1D00202400389E56 /* Measurements */,
+				87A509BE1D00201400389E56 /* Food and Energy */,
+				87A509BD1D00200200389E56 /* Profile */,
+				87A509BC1D001FF000389E56 /* HeartRate */,
+				87A509C01D00203A00389E56 /* Helpers */,
+				87D40F951CEB2E59000265D6 /* Assets.xcassets */,
+				87D40FA21CEB2E63000265D6 /* MyHealthApp.entitlements */,
 				87D40F9A1CEB2E59000265D6 /* Info.plist */,
 				87D40F891CEB2E59000265D6 /* Supporting Files */,
-				87D40FA31CEB32B0000265D6 /* ProfileViewController.h */,
-				87D40FA41CEB32B0000265D6 /* ProfileViewController.m */,
-				878B57EA1CFB74C9007128CE /* MeasurementsViewController.h */,
-				878B57EB1CFB74C9007128CE /* MeasurementsViewController.m */,
-				87929BF61CFDA1F50090B77E /* FoodIntakeViewController.h */,
-				87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */,
-				87A509B31CFF83B900389E56 /* EnergyViewController.h */,
-				87A509B41CFF83B900389E56 /* EnergyViewController.m */,
-				87A509B61CFF8C4D00389E56 /* HeartRateViewController.h */,
-				87A509B71CFF8C4D00389E56 /* HeartRateViewController.m */,
 			);
 			path = MyHealthApp;
 			sourceTree = "<group>";
