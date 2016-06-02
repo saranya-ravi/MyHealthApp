@@ -12,14 +12,18 @@ import HealthKit
 
 class ActivityController: WKInterfaceController {
 	let healthStore = HKHealthStore()
-
-	var currentWorkoutSession: HKWorkoutSession?
-
 	
 	@IBOutlet var activityRing: WKInterfaceActivityRing!
+	
 	override func willActivate() {
 		super.willActivate()
 		getData()
+		let summary = HKActivitySummary();
+		summary.activeEnergyBurned = HKQuantity(unit: HKUnit.calorieUnit(), doubleValue: 30)
+		summary.activeEnergyBurnedGoal = HKQuantity(unit: HKUnit.calorieUnit(), doubleValue: 70)
+		summary.appleExerciseTime = HKQuantity(unit: HKUnit.secondUnit(), doubleValue: 70)
+		summary.appleExerciseTimeGoal = HKQuantity(unit: HKUnit.secondUnit(), doubleValue: 140)
+		self.activityRing.setActivitySummary(summary, animated: true)
 	}
 	
 	
