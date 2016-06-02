@@ -45,6 +45,11 @@
                 <controller identifier="ActivityController" title="Activity Rings" id="m9g-X4-y9p" customClass="ActivityController" customModule="watch_Extension">
                     <items>
                         <activity alignment="left" id="cnK-IJ-qDt"/>
+                        <button width="1" alignment="left" title="fetch data" id="ww3-O3-XVc">
+                            <connections>
+                                <action selector="fetchData" destination="m9g-X4-y9p" id="jBq-3l-M8C"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
                         <outlet property="activityRing" destination="cnK-IJ-qDt" id="Cuq-tV-n4W"/>

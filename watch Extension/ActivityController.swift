@@ -12,12 +12,12 @@ import HealthKit
 
 class ActivityController: WKInterfaceController {
 	let healthStore = HKHealthStore()
+	var query : HKActivitySummaryQuery?
 	
 	@IBOutlet var activityRing: WKInterfaceActivityRing!
 	
 	override func willActivate() {
 		super.willActivate()
-		getData()
 		let summary = HKActivitySummary();
 		summary.activeEnergyBurned = HKQuantity(unit: HKUnit.calorieUnit(), doubleValue: 30)
 		summary.activeEnergyBurnedGoal = HKQuantity(unit: HKUnit.calorieUnit(), doubleValue: 70)
@@ -50,20 +50,56 @@ class ActivityController: WKInterfaceController {
 		// Create the predicate for the query
 		let summariesWithinRange = HKQuery.predicateForActivitySummariesBetweenStartDateComponents(startDateComponents, endDateComponents: endDateComponents)
 		
+		let typesToRead = Set([HKObjectType.activitySummaryType(),
+			HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierActiveEnergyBurned)!])
+		
+		healthStore.requestAuthorizationToShareTypes(nil, readTypes: typesToRead) { success, error in
+			if let error = error where !success {
+				print("You didn't allow HealthKit to access these read/write data types. In your app, try to handle this error gracefully when a user decides not to provide access. The error was: \(error.localizedDescription). If you're using a simulator, try it on a device.")
+			}
+		}
+
+		
 		// Build the query
-		let query = HKActivitySummaryQuery(predicate: summariesWithinRange) { (query, summaries, error) -> Void in
-			guard let activitySummaries = summaries else {
+		query = HKActivitySummaryQuery(predicate: summariesWithinRange) { (query, summaries, error) -> Void in
+			guard summaries != nil else {
 				guard error != nil else {
 					fatalError("*** Did not return a valid error object. ***")
 				}
 				
 				// Handle the error here...
+				
 				return
 			}
-			NSLog("%@", activitySummaries)
-			self.activityRing.setActivitySummary(activitySummaries[0], animated: true)		}
+			
+			// Do something with the summaries here...
+			self.activityRing.setActivitySummary(self.giveSummaryTotal(summaries), animated: true)
 
-		// Run the query
-		healthStore.executeQuery(query)
+		}
+		healthStore.executeQuery(query!)
+	}
+	
+	func giveSummaryTotal(summaries : [HKActivitySummary]?) -> HKActivitySummary{
+		var activeEnergyBurned = 0.0
+		var activeEnergyBurnedGoal = 0.0
+		var appleExerciseTime = 0.0
+		var appleExerciseTimeGoal = 0.0
+
+		let totalSummary = HKActivitySummary();
+		for summary in summaries!{
+			activeEnergyBurned += summary.activeEnergyBurned.doubleValueForUnit(HKUnit.calorieUnit())
+			activeEnergyBurnedGoal += summary.activeEnergyBurnedGoal.doubleValueForUnit(HKUnit.calorieUnit())
+			appleExerciseTime += summary.appleExerciseTime.doubleValueForUnit(HKUnit.secondUnit())
+			appleExerciseTimeGoal += summary.appleExerciseTimeGoal.doubleValueForUnit(HKUnit.secondUnit())
+		}
+		totalSummary.activeEnergyBurned = HKQuantity(unit: HKUnit.calorieUnit(), doubleValue: activeEnergyBurned)
+		totalSummary.activeEnergyBurnedGoal = HKQuantity(unit: HKUnit.calorieUnit(), doubleValue: activeEnergyBurnedGoal)
+		totalSummary.appleExerciseTime = HKQuantity(unit: HKUnit.secondUnit(), doubleValue: appleExerciseTime)
+		totalSummary.appleExerciseTimeGoal = HKQuantity(unit: HKUnit.secondUnit(), doubleValue: appleExerciseTimeGoal)
+		return totalSummary
+	}
+	
+	@IBAction func fetchData() {
+		getData()
 	}
 }

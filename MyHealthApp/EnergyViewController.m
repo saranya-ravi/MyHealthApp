@@ -63,7 +63,7 @@
 	HKQuantityType *dietaryCalorieEnergyType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierDietaryEnergyConsumed];
 	HKQuantityType *activeEnergyBurnType = [HKObjectType quantityTypeForIdentifier:HKQuantityTypeIdentifierActiveEnergyBurned];
 	
-	return [NSSet setWithObjects:dietaryCalorieEnergyType, activeEnergyBurnType, nil];
+	return [NSSet setWithObjects:dietaryCalorieEnergyType, activeEnergyBurnType, [HKObjectType activitySummaryType],nil];
 }
 
 

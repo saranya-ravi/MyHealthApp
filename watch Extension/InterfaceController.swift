@@ -46,7 +46,8 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
             HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierActiveEnergyBurned)!])
         
         let typesToRead = Set([
-            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierActiveEnergyBurned)!])
+            HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierActiveEnergyBurned)!,
+			HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierHeartRate)!])
         
         healthStore.requestAuthorizationToShareTypes(typesToShare, readTypes: typesToRead) { success, error in
             if let error = error where !success {
@@ -127,7 +128,7 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
     func beginWorkoutOnDate(beginDate: NSDate) {
         // Obtain the `HKObjectType` for active energy burned and the `HKUnit` for kilocalories.
         guard let activeEnergyType = HKObjectType.quantityTypeForIdentifier(HKQuantityTypeIdentifierActiveEnergyBurned) else { return }
-        let energyUnit = HKUnit.kilocalorieUnit()
+        let energyUnit = HKUnit.calorieUnit()
         
         // Update properties.
         workoutBeginDate = beginDate
@@ -156,7 +157,8 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
                 
                 // Update the UI.
                 self.currentActiveEnergyQuantity = HKQuantity(unit: energyUnit, doubleValue: processedResults.0)
-                self.activeEnergyBurnedLabel.setText("\(processedResults.0)")
+				
+                self.activeEnergyBurnedLabel.setText(String(format:"%0.2f",processedResults.0))
                 
                 // Update our samples.
                 self.activeEnergySamples += processedResults.1
