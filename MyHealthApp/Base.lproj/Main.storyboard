@@ -149,7 +149,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1jH-0p-iVk">
-                                <rect key="frame" x="276" y="166.5" width="24" height="20.5"/>
+                                <rect key="frame" x="276" y="166" width="24" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -166,6 +166,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s4h-YF-0C2">
+                                <rect key="frame" x="133.5" y="430" width="53" height="30"/>
+                                <state key="normal" title="Refresh"/>
+                                <connections>
+                                    <action selector="refresh:" destination="SOM-0p-yUb" eventType="touchUpInside" id="lQh-u7-oIU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -177,6 +184,8 @@
                             <constraint firstItem="tIK-uP-Mv2" firstAttribute="baseline" secondItem="1jH-0p-iVk" secondAttribute="baseline" id="FY3-LO-KgD"/>
                             <constraint firstItem="vkR-3q-wHH" firstAttribute="top" secondItem="1jH-0p-iVk" secondAttribute="bottom" constant="20" id="OKH-OV-6wl"/>
                             <constraint firstItem="vx9-s7-T7P" firstAttribute="baseline" secondItem="zef-5l-D21" secondAttribute="baseline" id="Oj5-Ou-cT2"/>
+                            <constraint firstItem="s4h-YF-0C2" firstAttribute="centerX" secondItem="xvT-pO-C92" secondAttribute="centerX" id="TOS-eQ-Qe9"/>
+                            <constraint firstItem="D2v-i4-wyG" firstAttribute="top" secondItem="s4h-YF-0C2" secondAttribute="bottom" constant="20" id="XY1-VM-SzO"/>
                             <constraint firstAttribute="trailing" secondItem="zef-5l-D21" secondAttribute="trailing" constant="20" id="YVt-ti-1Cj"/>
                             <constraint firstItem="TDl-ru-ubx" firstAttribute="top" secondItem="vx9-s7-T7P" secondAttribute="bottom" constant="20" id="ZEe-S3-rAR"/>
                             <constraint firstItem="UTv-ti-sxW" firstAttribute="leading" secondItem="xvT-pO-C92" secondAttribute="leading" constant="20" id="cZR-LM-Uoa"/>
@@ -195,11 +204,6 @@
                         </variation>
                     </view>
                     <navigationItem key="navigationItem" title="Food intake" id="wXk-1I-oqC">
-                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="Zxp-fK-JRI">
-                            <connections>
-                                <action selector="refresh:" destination="SOM-0p-yUb" id="FOy-Kc-Z6O"/>
-                            </connections>
-                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Ab4-5O-ggZ">
                             <connections>
                                 <segue destination="onZ-4f-GSp" kind="push" id="ay4-Jq-S1b"/>
