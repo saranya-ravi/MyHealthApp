@@ -11,21 +11,21 @@
             <objects>
                 <tableViewController id="lGw-qJ-TYi" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="28" sectionFooterHeight="28" id="dfC-PV-0Aq">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <sections>
                             <tableViewSection id="tO1-yU-i8K">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="4OH-vA-0Zs" style="IBUITableViewCellStyleDefault" id="2mf-0y-FuY">
-                                        <rect key="frame" x="0.0" y="64" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="64" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="2mf-0y-FuY" id="UP2-JG-1Wv">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="My Profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4OH-vA-0Zs">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="79.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="79.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -38,14 +38,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="por-4G-On7" style="IBUITableViewCellStyleDefault" id="KeB-pO-6Up">
-                                        <rect key="frame" x="0.0" y="144" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="144" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KeB-pO-6Up" id="1Hq-S2-53v">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="My Measurements" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="por-4G-On7">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="79.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="79.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -58,14 +58,14 @@
                                         </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="OgP-OT-b9Z" style="IBUITableViewCellStyleDefault" id="cQm-sM-avg">
-                                        <rect key="frame" x="0.0" y="224" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="224" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cQm-sM-avg" id="6Rw-8P-yT0">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Heart Rate" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="OgP-OT-b9Z">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="79.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="79.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -73,16 +73,19 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="SJB-Qe-32C" kind="show" id="czq-zw-8WG"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="8SX-aK-566" style="IBUITableViewCellStyleDefault" id="Xbq-Jz-eo3">
-                                        <rect key="frame" x="0.0" y="304" width="414" height="80"/>
+                                        <rect key="frame" x="0.0" y="304" width="375" height="80"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Xbq-Jz-eo3" id="slv-C8-gUU">
-                                            <rect key="frame" x="0.0" y="0.0" width="381" height="79.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="79.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Energy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8SX-aK-566">
-                                                    <rect key="frame" x="15" y="0.0" width="364" height="79.5"/>
+                                                    <rect key="frame" x="15" y="0.0" width="325" height="79.5"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                     <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -103,7 +106,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="My Health" id="RLS-8M-zvw"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EJY-3Y-7hZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -461,6 +464,76 @@
             </objects>
             <point key="canvasLocation" x="1708" y="555"/>
         </scene>
+        <!--Heart Rate-->
+        <scene sceneID="30v-VC-pKu">
+            <objects>
+                <viewController id="SJB-Qe-32C" customClass="HeartRateViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="rva-zt-Owx"/>
+                        <viewControllerLayoutGuide type="bottom" id="nin-bR-Csb"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="dvn-2R-NMh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeartLine" translatesAutoresizingMaskIntoConstraints="NO" id="F1Y-9n-Fux">
+                                <rect key="frame" x="93.5" y="74" width="133" height="94"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="HeartRate" translatesAutoresizingMaskIntoConstraints="NO" id="lXn-Dh-71e">
+                                <rect key="frame" x="85" y="165" width="150" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="L5B-KT-iiz"/>
+                                    <constraint firstAttribute="height" constant="150" id="NYD-ff-fhb"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7pG-Cv-e7z">
+                                <rect key="frame" x="70" y="375" width="180" height="30"/>
+                                <color key="backgroundColor" red="0.79607843140000001" green="0.79607843140000001" blue="0.79607843140000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="1VT-Fe-egW"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Sync heart Rate">
+                                    <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="updateHeartRate:" destination="SJB-Qe-32C" eventType="touchUpInside" id="ymL-Gx-oFE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="--" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Wt-3P-fRX">
+                                <rect key="frame" x="152.5" y="235.5" width="15" height="19.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2Wt-3P-fRX" firstAttribute="centerY" secondItem="lXn-Dh-71e" secondAttribute="centerY" constant="5" id="BEh-9r-It3"/>
+                            <constraint firstItem="7pG-Cv-e7z" firstAttribute="centerX" secondItem="dvn-2R-NMh" secondAttribute="centerX" id="E5i-Kp-0j8"/>
+                            <constraint firstItem="lXn-Dh-71e" firstAttribute="centerX" secondItem="dvn-2R-NMh" secondAttribute="centerX" id="FSH-F9-MUv"/>
+                            <constraint firstItem="lXn-Dh-71e" firstAttribute="centerY" secondItem="dvn-2R-NMh" secondAttribute="centerY" id="Vca-E0-4LX"/>
+                            <constraint firstItem="2Wt-3P-fRX" firstAttribute="centerX" secondItem="lXn-Dh-71e" secondAttribute="centerX" id="eBQ-Gh-bRU"/>
+                            <constraint firstItem="F1Y-9n-Fux" firstAttribute="top" secondItem="rva-zt-Owx" secondAttribute="bottom" constant="10" id="hYe-wi-sY9"/>
+                            <constraint firstItem="F1Y-9n-Fux" firstAttribute="centerX" secondItem="dvn-2R-NMh" secondAttribute="centerX" id="uYL-pn-V4s"/>
+                            <constraint firstItem="7pG-Cv-e7z" firstAttribute="top" secondItem="lXn-Dh-71e" secondAttribute="bottom" constant="60" id="vS1-RK-Bv1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Heart Rate" id="sb5-r4-apP"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="heartRateLabel" destination="2Wt-3P-fRX" id="6DS-vh-YZa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IkH-tS-Ofg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2054" y="273"/>
+        </scene>
         <!--Profile View Controller-->
         <scene sceneID="Q4h-cr-L9g">
             <objects>
@@ -543,4 +616,8 @@
             <point key="canvasLocation" x="454" y="218"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="HeartLine" width="133" height="94"/>
+        <image name="HeartRate" width="150" height="150"/>
+    </resources>
 </document>

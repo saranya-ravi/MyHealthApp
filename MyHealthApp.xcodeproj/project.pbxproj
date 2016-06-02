@@ -19,6 +19,7 @@
 		878B57EC1CFB74C9007128CE /* MeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B57EB1CFB74C9007128CE /* MeasurementsViewController.m */; };
 		87929BF81CFDA1F50090B77E /* FoodIntakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */; };
 		87A509B51CFF83B900389E56 /* EnergyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A509B41CFF83B900389E56 /* EnergyViewController.m */; };
+		87A509B81CFF8C4D00389E56 /* HeartRateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A509B71CFF8C4D00389E56 /* HeartRateViewController.m */; };
 		87D40F8B1CEB2E59000265D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D40F8A1CEB2E59000265D6 /* main.m */; };
 		87D40F8E1CEB2E59000265D6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D40F8D1CEB2E59000265D6 /* AppDelegate.m */; };
 		87D40F911CEB2E59000265D6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87D40F901CEB2E59000265D6 /* ViewController.m */; };
@@ -93,6 +94,8 @@
 		87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FoodIntakeViewController.m; sourceTree = "<group>"; };
 		87A509B31CFF83B900389E56 /* EnergyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EnergyViewController.h; sourceTree = "<group>"; };
 		87A509B41CFF83B900389E56 /* EnergyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EnergyViewController.m; sourceTree = "<group>"; };
+		87A509B61CFF8C4D00389E56 /* HeartRateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HeartRateViewController.h; sourceTree = "<group>"; };
+		87A509B71CFF8C4D00389E56 /* HeartRateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HeartRateViewController.m; sourceTree = "<group>"; };
 		87D40F861CEB2E59000265D6 /* MyHealthApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyHealthApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		87D40F8A1CEB2E59000265D6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		87D40F8C1CEB2E59000265D6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -206,6 +209,8 @@
 				87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */,
 				87A509B31CFF83B900389E56 /* EnergyViewController.h */,
 				87A509B41CFF83B900389E56 /* EnergyViewController.m */,
+				87A509B61CFF8C4D00389E56 /* HeartRateViewController.h */,
+				87A509B71CFF8C4D00389E56 /* HeartRateViewController.m */,
 			);
 			path = MyHealthApp;
 			sourceTree = "<group>";
@@ -378,6 +383,7 @@
 				87D40F911CEB2E59000265D6 /* ViewController.m in Sources */,
 				87D40F8E1CEB2E59000265D6 /* AppDelegate.m in Sources */,
 				3C3C01321CFF577100093ED1 /* HKHealthStore+AAPLExtensions.m in Sources */,
+				87A509B81CFF8C4D00389E56 /* HeartRateViewController.m in Sources */,
 				87D40FA51CEB32B0000265D6 /* ProfileViewController.m in Sources */,
 				87D40F8B1CEB2E59000265D6 /* main.m in Sources */,
 			);
@@ -608,6 +614,7 @@
 				3C3C01221CFF53E800093ED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C3C01251CFF53E800093ED1 /* Build configuration list for PBXNativeTarget "watch" */ = {
 			isa = XCConfigurationList;
@@ -616,6 +623,7 @@
 				3C3C01201CFF53E800093ED1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		87D40F811CEB2E59000265D6 /* Build configuration list for PBXProject "MyHealthApp" */ = {
 			isa = XCConfigurationList;
