@@ -16,6 +16,7 @@
 		3C3C012F1CFF55C600093ED1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C3C012E1CFF55C600093ED1 /* Assets.xcassets */; };
 		3C3C01321CFF577100093ED1 /* HKHealthStore+AAPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C3C01311CFF577100093ED1 /* HKHealthStore+AAPLExtensions.m */; };
 		3C3C01341CFF583E00093ED1 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C3C01331CFF583E00093ED1 /* HealthKit.framework */; };
+		3C73B4EC1D00277B001D171B /* ActivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C73B4EB1D00277B001D171B /* ActivityController.swift */; };
 		878B57EC1CFB74C9007128CE /* MeasurementsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 878B57EB1CFB74C9007128CE /* MeasurementsViewController.m */; };
 		87929BF81CFDA1F50090B77E /* FoodIntakeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87929BF71CFDA1F50090B77E /* FoodIntakeViewController.m */; };
 		87A509B51CFF83B900389E56 /* EnergyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 87A509B41CFF83B900389E56 /* EnergyViewController.m */; };
@@ -88,6 +89,7 @@
 		3C3C01311CFF577100093ED1 /* HKHealthStore+AAPLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HKHealthStore+AAPLExtensions.m"; sourceTree = "<group>"; };
 		3C3C01331CFF583E00093ED1 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS2.2.sdk/System/Library/Frameworks/HealthKit.framework; sourceTree = DEVELOPER_DIR; };
 		3C3C01351CFF583E00093ED1 /* watch Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = "watch Extension.entitlements"; sourceTree = "<group>"; };
+		3C73B4EB1D00277B001D171B /* ActivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityController.swift; sourceTree = "<group>"; };
 		878B57EA1CFB74C9007128CE /* MeasurementsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MeasurementsViewController.h; sourceTree = "<group>"; };
 		878B57EB1CFB74C9007128CE /* MeasurementsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MeasurementsViewController.m; sourceTree = "<group>"; };
 		87929BF61CFDA1F50090B77E /* FoodIntakeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FoodIntakeViewController.h; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				3C3C012B1CFF55B300093ED1 /* InterfaceController.swift */,
 				3C3C01111CFF53E800093ED1 /* Supporting Files */,
 				3C3C01291CFF558000093ED1 /* watch Extension-Bridging-Header.h */,
+				3C73B4EB1D00277B001D171B /* ActivityController.swift */,
 			);
 			path = "watch Extension";
 			sourceTree = "<group>";
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C3C012C1CFF55B300093ED1 /* ExtensionDelegate.swift in Sources */,
+				3C73B4EC1D00277B001D171B /* ActivityController.swift in Sources */,
 				3C3C012D1CFF55B300093ED1 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="10032"/>
     </dependencies>
     <scenes>
-        <!--Activity Rings-->
+        <!--mainController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="mainController" title="Activity Rings" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="watch_Extension">
+                <controller identifier="mainController" title="mainController" id="AgC-eL-Hgc" userLabel="mainController" customClass="InterfaceController" customModule="watch_Extension">
                     <items>
                         <group width="1" height="1" alignment="left" layout="vertical" id="zO5-JP-1Om">
                             <items>
@@ -22,9 +22,32 @@
                             </items>
                         </group>
                     </items>
+                    <menu key="menu" id="p8M-EN-Hch">
+                        <items>
+                            <menuItem title="Graph" icon="info" id="yel-Vo-WaX">
+                                <connections>
+                                    <action selector="graphPressed" destination="AgC-eL-Hgc" id="ahJ-kD-Mtg"/>
+                                </connections>
+                            </menuItem>
+                        </items>
+                    </menu>
                     <connections>
                         <outlet property="activeEnergyBurnedLabel" destination="XQa-Ja-Wtu" id="fvs-OH-6QO"/>
                         <outlet property="workoutButton" destination="Qcm-UG-5RR" id="X7j-Ab-4dG"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="71" y="670"/>
+        </scene>
+        <!--Activity Rings-->
+        <scene sceneID="Osi-zr-vKr">
+            <objects>
+                <controller identifier="ActivityController" title="Activity Rings" id="m9g-X4-y9p" customClass="ActivityController" customModule="watch_Extension">
+                    <items>
+                        <activity alignment="left" id="cnK-IJ-qDt"/>
+                    </items>
+                    <connections>
+                        <outlet property="activityRing" destination="cnK-IJ-qDt" id="Cuq-tV-n4W"/>
                     </connections>
                 </controller>
             </objects>

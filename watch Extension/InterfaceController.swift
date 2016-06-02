@@ -220,4 +220,9 @@ class InterfaceController: WKInterfaceController, HKWorkoutSessionDelegate {
     func workoutSession(workoutSession: HKWorkoutSession, didFailWithError error: NSError) {
         print("The workout session failed. The error was: \(error.localizedDescription)")
     }
+	
+	@IBAction func graphPressed() {
+		presentControllerWithName("ActivityController", context: nil)
+
+	}
 }
